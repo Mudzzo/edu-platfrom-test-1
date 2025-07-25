@@ -1,0 +1,25 @@
+.card{
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+div.benifit{
+ background: #fff;
+    transition: transform 0.6s ease;
+  transition: background-color 0.2s ease;
+}
+
+.custom-translate-up:hover {
+  transform: translateY(-3px);
+ 
+}
+.year{
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+}
+.partBg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ 
+}
