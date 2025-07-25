@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './PaymentPage.css';
+import './payment.css';
 import { motion } from "framer-motion";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link } from 'react-router-dom';
@@ -163,4 +163,4 @@ const Payment: React.FC = () => {
     </>
   )
 }
-export default Payment;
+export default Payment;

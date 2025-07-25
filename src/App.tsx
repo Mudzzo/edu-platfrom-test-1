@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./App.css";
 import Home from "./pages/Home/Home";
-import  Check from "./pages/check/src/Check";
-import  Payment from "./pages/payment/src/Payment";
+import  Check from "./pages/check/Check";
+import  Payment from "./pages/payment/Payment";
 import Layout from "./components/Layout/Layout";
 import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
