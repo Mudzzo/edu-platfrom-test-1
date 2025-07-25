@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./App.css";
 import Home from "./pages/Home/Home";
+import  Check from "./pages/check/Check";
+import  Payment from "./pages/payment/Payment";
 import Layout from "./components/Layout/Layout";
 import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
@@ -8,6 +10,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 import { useEffect } from "react";
 import Cookies from "js-cookie";
+
 
 i18n
   .use(initReactI18next)
@@ -49,6 +52,8 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/check" element={<Check />} />
           </Routes>
         </Layout>
       </BrowserRouter>
