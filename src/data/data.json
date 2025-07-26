@@ -1,0 +1,149 @@
+{
+  "courses": [
+    {
+      "id": "chem-101",
+      "name": "الكيمياء",
+      "description": "الكيمياء العضوية، التحليلية، الفيزيائية والحيوية",
+      "iconPath": "M9.75 21.75h4.5m-4.5 0a2.25 2.25 0 01-2.25-2.25V6.75m2.25 15a2.25 2.25 0 002.25-2.25V6.75m-4.5 15V6.75m0 0a2.25 2.25 0 012.25-2.25h4.5a2.25 2.25 0 012.25 2.25v12.75m-13.5 0v-2.25a2.25 2.25 0 012.25-2.25h9a2.25 2.25 0 012.25 2.25v2.25",
+      "teachers": [
+        {
+          "id": "t-chem-1",
+          "name": "د. ليلى أحمد",
+          "subject": "مدرسة الكيمياء العضوية",
+          "courses": 7,
+          "videos": 42,
+          "students": 723,
+          "hours": 110,
+          "avatarUrl": "https://i.pravatar.cc/150?u=a042581f4e29026704d",
+          "isSub": true,
+          "availablePlans": ["plan-full-year", "plan-semester", "plan-monthly", "plan-single-lecture"],
+          "subscribedPlanId": "plan-full-year"
+        },
+        {
+          "id": "t-chem-2",
+          "name": "أ. محمد إبراهيم",
+          "subject": "كيمياء تحليلية",
+          "courses": 4,
+          "videos": 28,
+          "students": 340,
+          "hours": 60,
+          "avatarUrl": "https://i.pravatar.cc/150?u=chem-2",
+          "isSub": false,
+          "availablePlans": ["plan-monthly", "plan-single-lecture"],
+          "subscribedPlanId": null
+        }
+      ]
+    },
+    {
+      "id": "phys-201",
+      "name": "الفيزياء",
+      "description": "الميكانيكا، الكهرباء، البصريات، الفيزياء الحديثة",
+      "iconPath": "M11.25 4.5l7.5 7.5-7.5 7.5M4.5 12h14",
+      "teachers": [
+        {
+          "id": "t-phys-1",
+          "name": "د. أحمد علي",
+          "subject": "مدرس الفيزياء النووية",
+          "courses": 5,
+          "videos": 45,
+          "students": 1234,
+          "hours": 90,
+          "avatarUrl": "https://i.pravatar.cc/150?u=a042581f4e29026705d",
+          "isSub": true,
+          "availablePlans": ["plan-full-year", "plan-semester"],
+          "subscribedPlanId": "plan-semester"
+        },
+        {
+          "id": "t-phys-2",
+          "name": "م. سلمى خالد",
+          "subject": "فيزياء الكم",
+          "courses": 3,
+          "videos": 18,
+          "students": 190,
+          "hours": 40,
+          "avatarUrl": "https://i.pravatar.cc/150?u=phys-2",
+          "isSub": false,
+          "availablePlans": ["plan-full-year", "plan-semester", "plan-monthly", "plan-single-lecture"],
+          "subscribedPlanId": null
+        }
+      ]
+    },
+    {
+      "id": "math-301",
+      "name": "الرياضيات",
+      "description": "الجبر، الهندسة، التفاضل والتكامل",
+      "iconPath": "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+      "teachers": [
+        {
+          "id": "t-math-1",
+          "name": "د. فاطمة محمد",
+          "subject": "مدرسة الرياضيات التطبيقية",
+          "courses": 10,
+          "videos": 60,
+          "students": 1200,
+          "hours": 200,
+          "avatarUrl": "https://i.pravatar.cc/150?u=a042581f4e29026706d",
+          "isSub": true,
+          "availablePlans": ["plan-full-year", "plan-monthly", "plan-single-lecture"],
+          "subscribedPlanId": "plan-monthly"
+        },
+        {
+          "id": "t-math-2",
+          "name": "أ. يوسف سامي",
+          "subject": "رياضيات هندسية",
+          "courses": 6,
+          "videos": 35,
+          "students": 580,
+          "hours": 95,
+          "avatarUrl": "https://i.pravatar.cc/150?u=math-2",
+          "isSub": false,
+          "availablePlans": ["plan-semester", "plan-monthly"],
+          "subscribedPlanId": null
+        }
+      ]
+    }
+  ],
+
+  "plans": [
+    {
+      "id": "plan-full-year",
+      "title": "كامل العام",
+      "subtitle": "برنامج تعليمي شامل يغطي المنهج الكامل للعام الدراسي",
+      "bullets": ["جميع دروس العام", "اختبارات دورية", "مراجعات نهائية", "دعم فني متقدم"],
+      "lessons": "120+ درس",
+      "hours": "300+ ساعة",
+      "price": "900 ج.م",
+      "period": "/ العام الكامل"
+    },
+    {
+      "id": "plan-semester",
+      "title": "فصول دراسية",
+      "subtitle": "اختر الفصل الدراسي المناسب لك (الأول أو الثاني)",
+      "bullets": ["دروس الفصل المختار", "مراجعة شاملة", "دعم فني"],
+      "lessons": "60+ درس",
+      "hours": "150+ ساعة",
+      "price": "500 ج.م",
+      "period": "/ الفصل"
+    },
+    {
+      "id": "plan-monthly",
+      "title": "شهري",
+      "subtitle": "اشتراك شهري مرن يناسب جدولك الدراسي",
+      "bullets": ["دروس الشهر", "مرونة في التجديد", "تحديثات مستمرة", "دعم فني أساسي"],
+      "lessons": "20+ درس",
+      "hours": "50+ ساعة",
+      "price": "150 ج.م",
+      "period": "/ الشهر"
+    },
+    {
+      "id": "plan-single-lecture",
+      "title": "محاضرة منفصلة",
+      "subtitle": "اختر محاضرات محددة حسب احتياجك الدراسي",
+      "bullets": ["محاضرة واحدة", "مدة أسبوع للمشاهدة", "مواد تكميلية"],
+      "lessons": "1 درس",
+      "hours": "1-2 ساعة",
+      "price": "25 ج.م",
+      "period": "/ المحاضرة"
+    }
+  ]
+}
