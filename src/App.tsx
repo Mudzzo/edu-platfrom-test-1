@@ -12,6 +12,7 @@ import Cookies from "js-cookie";
 import CourseGrid from "./pages/CourseGrid";
 import TeacherGrid from "./pages/TeachersPage/TeacherGrid";
 import PlansPage from "./pages/PlansPage/PlansPage";
+import Home from "./pages/Home/Home";
 
 i18n
   .use(initReactI18next)
@@ -48,8 +49,7 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route index element={<CourseGrid />} />
-          <Route path="/courses" element={<CourseGrid />} />
+          <Route path="/" element={<Home />} />
 
           <Route path="/courses/:courseId">
             <Route index element={<TeacherGrid />} />
