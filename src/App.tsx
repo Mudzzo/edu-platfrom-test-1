@@ -14,6 +14,7 @@ import Cookies from "js-cookie";
 
 import TeacherGrid from "./pages/TeachersPage/TeacherGrid";
 import PlansPage from "./pages/PlansPage/PlansPage";
+import { CourseLayout } from "./components/Layout/CourseLayout";
 
 i18n
   .use(initReactI18next)
@@ -52,7 +53,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="/courses/:courseId">
+          <Route path="/courses/:courseId" element={<CourseLayout />}>
             <Route index element={<TeacherGrid />} />
             <Route path="teachers/:teacherId" element={<PlansPage />} />
             <Route path="teachers/:teacherId/content" element={<CourseContent />} />
@@ -64,7 +65,7 @@ function App() {
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </Layout>
-    </div>
+    </BrowserRouter>
   );
 }
 

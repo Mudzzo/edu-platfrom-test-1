@@ -89,7 +89,7 @@ const CourseContent: React.FC = () => {
   return (
     <div className="max-w-5xl mx-auto">
 
-      <div className="flex flex-col gap-6 mb-8">
+      <div className="flex flex-col items-center gap-6 mb-8">
         {planId === 'plan-semester' && (
           <div className="bg-purple-50 rounded-lg p-1">
             <button
