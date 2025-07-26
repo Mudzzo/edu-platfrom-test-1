@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home/Home";
+import  Check from "./pages/check/Check";
+import  Payment from "./pages/payment/Payment";
 import Layout from "./components/Layout/Layout";
 import CourseContent from "./components/Courses/CourseContent/CourseContent";
 import i18n from "i18next";
@@ -11,7 +14,6 @@ import Cookies from "js-cookie";
 
 import TeacherGrid from "./pages/TeachersPage/TeacherGrid";
 import PlansPage from "./pages/PlansPage/PlansPage";
-import Home from "./pages/Home/Home";
 
 i18n
   .use(initReactI18next)
@@ -55,11 +57,14 @@ function App() {
             <Route path="teachers/:teacherId" element={<PlansPage />} />
             <Route path="teachers/:teacherId/content" element={<CourseContent />} />
           </Route>
+          
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/check" element={<Check />} />
 
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </div>
   );
 }
 
