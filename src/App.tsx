@@ -9,7 +9,6 @@ import HttpApi from "i18next-http-backend";
 import { useEffect } from "react";
 import Cookies from "js-cookie";
 
-import CourseGrid from "./pages/CourseGrid";
 import TeacherGrid from "./pages/TeachersPage/TeacherGrid";
 import PlansPage from "./pages/PlansPage/PlansPage";
 import Home from "./pages/Home/Home";
