@@ -38,15 +38,18 @@ export function CourseLayout() {
 
   return (
     <div className="container mx-auto px-4">
-      {backLink && (
-        <button 
-          onClick={() => navigate(backLink.path)} 
-          className="my-6 bg-gray-200 hover:bg-purple-500 text-gray-800 hover:text-white font-bold py-2 px-4 rounded-lg inline-flex items-center transition-colors"
-        >
-          <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          <span>{backLink.label}</span>
-        </button>
-      )}
+      <div className='pr-4'>
+        {backLink && (
+          <button 
+            onClick={() => navigate(backLink.path)} 
+            className="my-6 bg-gray-200 hover:bg-purple-500 text-gray-800 hover:text-white font-bold py-2 px-4 rounded-lg inline-flex items-center transition-colors"
+          >
+            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            <span>{backLink.label}</span>
+          </button>
+        )}
+      </div>
+      
       
       <main>
         <Outlet />

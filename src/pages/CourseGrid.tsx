@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import CourseCard from '../components/Courses/Cards/CourseCard';
+import CourseCard from '../components/Courses/Cards/CourseCard/CourseCard';
 import data from '../data/data.json';
 import { motion } from 'framer-motion';
 
