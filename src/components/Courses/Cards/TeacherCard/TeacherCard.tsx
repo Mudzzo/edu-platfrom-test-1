@@ -1,5 +1,5 @@
 import React from 'react';
-import { type Plan } from '../../SubscriptionPlans/PlanCard';
+import { type Plan } from '../PlanCard/PlanCard';
 import StatsCard from '../StatsCard';
 import BackgroundShapes from '../BackgroundShapes';
 import TeacherImage from './components/TeacherImage';
