@@ -16,15 +16,16 @@ const Check: React.FC = () => {
         exit={{ opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-<div className='lg:flex gap-5 w-[100%]'>
-    <div className='lg:w-2/3'>
-          <div dir="auto" className="text-center pt-7">
+            <div dir="auto" className="text-center pt-7 ">
           <i className="fas fa-credit-card fa-2xl"></i>
-          <span className="text-3xl font-medium text-gray-900">صفحة الدفع</span>
+          <span className="text-3xl font-medium text-gray-900 ">صفحة الدفع</span>
           <p className="py-3 text-gray-600">
             اختر الباقة المناسبة لك وأكمل عملية الدفع
           </p>
         </div>
+<div className='lg:flex gap-5 w-[100%]'>
+    <div className='lg:w-2/3'>
+      
 
         <div className="container transition-all hover:shadow-xl my-5 pb-5 custom-translate-up overflow-hidden rounded-2xl shadow-gray-400 w-[90%] mx-auto">
           <div className="text-right pr-6 partBg py-5 mb-5">
@@ -112,7 +113,7 @@ const Check: React.FC = () => {
         </div>
   </div>
 
-        <div className="lg:w-1/3 lg:mt-35 bg-white w-[90%] my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all">
+        <div className="lg:w-1/3 lg:mt-5 bg-white w-[90%]  rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all">
           <div dir="auto" className="partBg text-right py-5 pr-5">
             <i className="fas fa-receipt text-2xl text-white"></i>
             <span className="text-white text-2xl font-bold">ملخص الطلب</span>
