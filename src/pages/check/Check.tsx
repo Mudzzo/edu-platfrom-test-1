@@ -16,7 +16,9 @@ const Check: React.FC = () => {
         exit={{ opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <div dir="auto" className="text-center pt-7">
+<div className='lg:flex gap-5 w-[100%]'>
+    <div className='lg:w-2/3'>
+          <div dir="auto" className="text-center pt-7">
           <i className="fas fa-credit-card fa-2xl"></i>
           <span className="text-3xl font-medium text-gray-900">صفحة الدفع</span>
           <p className="py-3 text-gray-600">
@@ -108,8 +110,9 @@ const Check: React.FC = () => {
             </div>
           ))}
         </div>
+  </div>
 
-        <div className="bg-white w-[90%] my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all">
+        <div className="lg:w-1/3 lg:mt-35 bg-white w-[90%] my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all">
           <div dir="auto" className="partBg text-right py-5 pr-5">
             <i className="fas fa-receipt text-2xl text-white"></i>
             <span className="text-white text-2xl font-bold">ملخص الطلب</span>
@@ -150,6 +153,7 @@ const Check: React.FC = () => {
             </p>
           </div>
         </div>
+</div>
       </motion.div>
     </>
   );
