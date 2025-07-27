@@ -1,7 +1,9 @@
+import {type Plan} from '../../PlanCard/PlanCard'
+
 interface TeacherInfoProps {
   name: string;
   subject: string;
-  subscribedPlan: any;
+  subscribedPlan?: Plan;
 }
 
 const TeacherInfo: React.FC<TeacherInfoProps> = ({ subscribedPlan, name, subject }) => {

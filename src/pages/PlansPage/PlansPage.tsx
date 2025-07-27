@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import PlanCard from '../../components/Courses/SubscriptionPlans/PlanCard';
+import PlanCard from '../../components/Courses/Cards/PlanCard/PlanCard';
 import data from '../../data/data.json';
 
 export default function PlansPage() {

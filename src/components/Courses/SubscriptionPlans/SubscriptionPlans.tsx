@@ -1,5 +1,5 @@
 import React from 'react';
-import PlanCard, { type Plan } from './PlanCard';
+import PlanCard, { type Plan } from '../Cards/PlanCard/PlanCard';
 
 
 interface Props {

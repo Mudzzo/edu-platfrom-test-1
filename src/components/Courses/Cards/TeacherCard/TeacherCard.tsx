@@ -1,5 +1,5 @@
 import React from 'react';
-import { type Plan } from '../../SubscriptionPlans/PlanCard';
+import { type Plan } from '../PlanCard/PlanCard';
 import StatsCard from '../StatsCard';
 import BackgroundShapes from '../BackgroundShapes';
 import TeacherImage from './components/TeacherImage';
@@ -15,7 +15,7 @@ interface TeacherCardProps {
   hours: number;
   avatarUrl: string;
   subscribedPlanId: string | null;
-  allPlans: Plan[]; 
+  allPlans: Plan[],
 }
 
 const TeacherCard: React.FC<TeacherCardProps> = ({
