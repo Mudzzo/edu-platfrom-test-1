@@ -17,8 +17,8 @@ const Check: React.FC = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
             <div dir="auto" className="text-center pt-7 ">
-          <i className="fas fa-credit-card fa-2xl"></i>
-          <span className="text-3xl font-medium text-gray-900 ">صفحة الدفع</span>
+          <i className="fas fa-credit-card fa-2xl text-gray-400"></i>
+          <span className="text-3xl font-medium text-gray-400 ">صفحة الدفع</span>
           <p className="py-3 text-gray-600">
             اختر الباقة المناسبة لك وأكمل عملية الدفع
           </p>
@@ -27,13 +27,13 @@ const Check: React.FC = () => {
     <div className='lg:w-2/3'>
       
 
-        <div className="container transition-all hover:shadow-xl my-5 pb-5 custom-translate-up overflow-hidden rounded-2xl shadow-gray-400 w-[90%] mx-auto">
+        <div className="container transition-all hover:shadow-xl my-5 pb-5 custom-translate-up overflow-hidden rounded-2xl shadow-gray-800 w-[90%] mx-auto">
           <div className="text-right pr-6 partBg py-5 mb-5">
             <span className="text-2xl text-white">اختر باقة الاشتراك</span>
             <i className="fas fa-tag text-white fa-2xl"></i>
           </div>
 
-          <div className="row grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="inner relative text-center py-10 hover:scale-105 rounded-xl custom-translate-up transition-all bg-white shadow-xl hover:shadow-2xl">
               <label><input type="radio" name="payment" className="absolute top-5 left-5" /></label>
               <i className="fas fa-calendar-day fa-2xl"></i>
@@ -68,7 +68,7 @@ const Check: React.FC = () => {
               <p className="text-gray-700 pt-5 pb-5 text-xl">عام كامل</p>
             </div>
 
-            <div className="inner shadow-gray-200 relative text-center py-10 hover:scale-105 rounded-xl custom-translate-up transition-all bg-white shadow-xl hover:shadow-2xl">
+            <div className="inner  relative text-center py-10 hover:scale-105 rounded-xl custom-translate-up transition-all bg-white shadow-xl hover:shadow-2xl">
               <label><input type="radio" name="payment" className="absolute top-5 left-5" /></label>
               <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center bg-black">
                 <i className="fas fa-play fa-xl text-white"></i>
