@@ -23,7 +23,7 @@ const Check: React.FC = () => {
             اختر الباقة المناسبة لك وأكمل عملية الدفع
           </p>
         </div>
-<div className='lg:flex gap-5 w-[100%]'>
+<div className='lg:flex  w-[100%]'>
     <div className='lg:w-2/3'>
       
 
@@ -95,22 +95,29 @@ const Check: React.FC = () => {
           </button>
         </div>
 
-        <div className="bg-white w-[90%] my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all">
-          <div dir="auto" className="partBg text-right py-5 pr-5">
-            <span className="text-white text-xl">وسيلة الدفع</span>
-          </div>
-          {['credit-card', 'mobile-alt', 'qrcode'].map((icon, index) => (
-            <div key={index} className="w-[90%] mx-auto relative">
-              <div className="text-center py-9 mt-5 rounded-xl bg-white shadow-xl hover:translate-y-[-5px] hover:scale-105 hover:shadow-xl hover:shadow-gray-300 transition-all">
-                <label><input type="radio" name="payWay" className="absolute top-5 left-5" /></label>
-                <i className={`fas fa-${icon} fa-2xl`}></i>
-                <h4 className="text-xl font-semibold mt-4">
-                  {icon === 'credit-card' ? 'بطاقة ائتمان' : icon === 'mobile-alt' ? 'فودافون كاش' : 'إنستاباي'}
-                </h4>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="bg-white w-[90%] my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all"> 
+  <div dir="auto" className="partBg text-right py-5 pr-5"> 
+    <span className="text-white text-xl">وسيلة الدفع</span> 
+  </div> 
+
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 pb-6">
+    {['credit-card', 'mobile-alt', 'qrcode'].map((icon, index) => ( 
+      <div key={index} className="relative py-5"> 
+        <div className="text-center py-9 rounded-xl bg-white shadow-xl   hover:shadow-2xl hover:shadow-gray-600 transition-all "> 
+          <label>
+            <input type="radio" name="payWay" className="absolute top-5 left-5" />
+          </label> 
+          <i className={`fas fa-${icon} fa-2xl`}></i> 
+          <h4 className="text-xl font-semibold mt-4"> 
+            {icon === 'credit-card' ? 'بطاقة ائتمان' : icon === 'mobile-alt' ? 'فودافون كاش' : 'إنستاباي'} 
+          </h4> 
+        </div> 
+      </div> 
+    ))} 
+  </div>
+</div>
+
   </div>
 
         <div className="lg:w-1/3 lg:mt-5 bg-white w-[90%]  rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all">
