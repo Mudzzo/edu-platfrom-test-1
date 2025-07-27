@@ -95,13 +95,13 @@ const Check: React.FC = () => {
           </button>
         </div>
 
-      <div className="bg-white w-[90%] my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all"> 
+      <div className="bg-white  my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all"> 
   <div dir="auto" className="partBg text-right py-5 pr-5"> 
     <span className="text-white text-xl">وسيلة الدفع</span> 
   </div> 
 
   
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 pb-6">
+  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 pb-6">
     {['credit-card', 'mobile-alt', 'qrcode'].map((icon, index) => ( 
       <div key={index} className="relative py-5"> 
         <div className="text-center py-9 rounded-xl bg-white shadow-xl   hover:shadow-2xl hover:shadow-gray-600 transition-all "> 
