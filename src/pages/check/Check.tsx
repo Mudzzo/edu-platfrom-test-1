@@ -17,23 +17,23 @@ const Check: React.FC = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
             <div dir="auto" className="text-center pt-7 ">
-          <i className="fas fa-credit-card fa-2xl"></i>
-          <span className="text-3xl font-medium text-gray-900 ">صفحة الدفع</span>
+          <i className="fas fa-credit-card fa-2xl text-gray-400"></i>
+          <span className="text-3xl font-medium text-gray-400 ">صفحة الدفع</span>
           <p className="py-3 text-gray-600">
             اختر الباقة المناسبة لك وأكمل عملية الدفع
           </p>
         </div>
-<div className='lg:flex gap-5 w-[100%]'>
+<div className='lg:flex  w-[100%]'>
     <div className='lg:w-2/3'>
       
 
-        <div className="container transition-all hover:shadow-xl my-5 pb-5 custom-translate-up overflow-hidden rounded-2xl shadow-gray-400 w-[90%] mx-auto">
+        <div className="container transition-all hover:shadow-xl my-5 pb-5 custom-translate-up overflow-hidden rounded-2xl shadow-gray-800 w-[90%] mx-auto">
           <div className="text-right pr-6 partBg py-5 mb-5">
             <span className="text-2xl text-white">اختر باقة الاشتراك</span>
             <i className="fas fa-tag text-white fa-2xl"></i>
           </div>
 
-          <div className="row grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="inner relative text-center py-10 hover:scale-105 rounded-xl custom-translate-up transition-all bg-white shadow-xl hover:shadow-2xl">
               <label><input type="radio" name="payment" className="absolute top-5 left-5" /></label>
               <i className="fas fa-calendar-day fa-2xl"></i>
@@ -68,7 +68,7 @@ const Check: React.FC = () => {
               <p className="text-gray-700 pt-5 pb-5 text-xl">عام كامل</p>
             </div>
 
-            <div className="inner shadow-gray-200 relative text-center py-10 hover:scale-105 rounded-xl custom-translate-up transition-all bg-white shadow-xl hover:shadow-2xl">
+            <div className="inner  relative text-center py-10 hover:scale-105 rounded-xl custom-translate-up transition-all bg-white shadow-xl hover:shadow-2xl">
               <label><input type="radio" name="payment" className="absolute top-5 left-5" /></label>
               <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center bg-black">
                 <i className="fas fa-play fa-xl text-white"></i>
@@ -95,22 +95,29 @@ const Check: React.FC = () => {
           </button>
         </div>
 
-        <div className="bg-white w-[90%] my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all">
-          <div dir="auto" className="partBg text-right py-5 pr-5">
-            <span className="text-white text-xl">وسيلة الدفع</span>
-          </div>
-          {['credit-card', 'mobile-alt', 'qrcode'].map((icon, index) => (
-            <div key={index} className="w-[90%] mx-auto relative">
-              <div className="text-center py-9 mt-5 rounded-xl bg-white shadow-xl hover:translate-y-[-5px] hover:scale-105 hover:shadow-xl hover:shadow-gray-300 transition-all">
-                <label><input type="radio" name="payWay" className="absolute top-5 left-5" /></label>
-                <i className={`fas fa-${icon} fa-2xl`}></i>
-                <h4 className="text-xl font-semibold mt-4">
-                  {icon === 'credit-card' ? 'بطاقة ائتمان' : icon === 'mobile-alt' ? 'فودافون كاش' : 'إنستاباي'}
-                </h4>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="bg-white  my-10 rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all"> 
+  <div dir="auto" className="partBg text-right py-5 pr-5"> 
+    <span className="text-white text-xl">وسيلة الدفع</span> 
+  </div> 
+
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 pb-6">
+    {['credit-card', 'mobile-alt', 'qrcode'].map((icon, index) => ( 
+      <div key={index} className="relative py-5"> 
+        <div className="text-center py-9 rounded-xl bg-white shadow-xl   hover:shadow-2xl hover:shadow-gray-600 transition-all "> 
+          <label>
+            <input type="radio" name="payWay" className="absolute top-5 left-5" />
+          </label> 
+          <i className={`fas fa-${icon} fa-2xl`}></i> 
+          <h4 className="text-xl font-semibold mt-4"> 
+            {icon === 'credit-card' ? 'بطاقة ائتمان' : icon === 'mobile-alt' ? 'فودافون كاش' : 'إنستاباي'} 
+          </h4> 
+        </div> 
+      </div> 
+    ))} 
+  </div>
+</div>
+
   </div>
 
         <div className="lg:w-1/3 lg:mt-5 bg-white w-[90%]  rounded-xl overflow-hidden mx-auto hover:shadow-xl custom-translate-up transition-all">
