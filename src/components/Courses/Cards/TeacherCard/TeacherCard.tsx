@@ -15,7 +15,7 @@ interface TeacherCardProps {
   hours: number;
   avatarUrl: string;
   subscribedPlanId: string | null;
-  allPlans: Plan[]; 
+  allPlans: Plan[],
 }
 
 const TeacherCard: React.FC<TeacherCardProps> = ({

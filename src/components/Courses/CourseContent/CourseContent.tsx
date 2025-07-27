@@ -67,14 +67,15 @@ const CourseContent: React.FC = () => {
 
   const getCourseData = (): Section[] => {
 
+    const midPoint = Math.ceil(fullCourseData.length / 2);
+    const firstSemester = fullCourseData.slice(0, midPoint);
+    const secondSemester = fullCourseData.slice(midPoint);
+    const currentMonth = monthsData.find(month => month.name === activeMonth);
+
     switch (planId) {
       case 'plan-semester':
-        const midPoint = Math.ceil(fullCourseData.length / 2);
-        const firstSemester = fullCourseData.slice(0, midPoint);
-        const secondSemester = fullCourseData.slice(midPoint);
         return activeSemester === 'first' ? firstSemester : secondSemester;
       case 'plan-monthly':
-        const currentMonth = monthsData.find(month => month.name === activeMonth);
         if (!currentMonth) return [];
         return fullCourseData.slice(currentMonth.startIndex, currentMonth.endIndex);
       case 'plan-full-year':

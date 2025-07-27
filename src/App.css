@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgb(19, 19, 41) 0%, rgb(26, 26, 46) 50%, rgb(22, 33, 62) 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3), transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 119, 198, 0.3), transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(255, 119, 198, 0.2), transparent 50%);
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      transform: translateY(-20px) rotate(5deg);
+  }
 }
