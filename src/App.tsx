@@ -12,7 +12,7 @@ import HttpApi from "i18next-http-backend";
 import { useEffect } from "react";
 import Cookies from "js-cookie";
 
-import TeacherGrid from "./pages/TeachersPage/TeacherGrid";
+import TeacherGrid from "./components/Courses/TeacherGrid.tsx";
 import PlansPage from "./pages/PlansPage/PlansPage";
 import { CourseLayout } from "./components/Layout/CourseLayout";
 import CoursesPage from "./pages/CoursesPage";

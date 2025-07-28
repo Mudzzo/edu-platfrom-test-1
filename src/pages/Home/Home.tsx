@@ -1,7 +1,7 @@
 // import { t } from "i18next";
-import CourseGrid from "../CourseGrid";
+import CourseGrid from "../../components/Courses/CourseGrid";
 import Hero from "../Hero/Hero";
-import TeacherGrid from "../TeachersPage/TeacherGrid";
+import TeacherGrid from "../../components/Courses/TeacherGrid.tsx";
 
 export default function Home() {
   return (

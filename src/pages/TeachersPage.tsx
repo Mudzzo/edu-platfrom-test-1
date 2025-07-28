@@ -1,5 +1,5 @@
 import React from 'react';
-import TeacherGrid from './TeachersPage/TeacherGrid';
+import TeacherGrid from '../components/Courses/TeacherGrid';
 
 const TeachersPage: React.FC = () => {
 
