@@ -34,7 +34,7 @@ const LockIcon = () => (
 const LessonCard: React.FC<LessonCardProps> = ({ lesson, lessonIndex, isIndividualLecturePlan }) => {
   return (
     <motion.div
-      className="flex flex-col sm:flex-row bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out my-4"
+      className="flex flex-col sm:flex-row bg-gradient-to-br to-stone-50/10 backdrop-blur-xl rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out my-4"
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
     >
@@ -51,14 +51,14 @@ const LessonCard: React.FC<LessonCardProps> = ({ lesson, lessonIndex, isIndividu
       <div className="p-5 flex flex-col flex-grow justify-between">
         <div>
           <div className="flex items-start justify-between">
-            <h3 className="font-bold text-lg text-gray-900 mb-1">{lesson.title}</h3>
+            <h3 className="font-bold text-lg text-stone-100 mb-1">{lesson.title}</h3>
             <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ml-4 
               ${lesson.isCompleted ? 'bg-green-100 text-green-600' : 'bg-purple-100 text-purple-600'}`}
             >
               {lesson.isCompleted ? <CheckIcon /> : <span className="font-bold text-sm">{lessonIndex + 1}</span>}
             </div>
           </div>
-          <p className="text-sm text-gray-500">{lesson.duration}</p>
+          <p className="text-sm text-gray-400">{lesson.duration}</p>
         </div>
         
         <div className="flex items-center justify-between mt-4">
