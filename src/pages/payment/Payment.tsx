@@ -35,16 +35,21 @@ const Payment: React.FC = () => {
           </div>
         </div>
 
-        <div className='text-center mb-6 bg-transparent'>
-          <h2 className='text-3xl  text-gray-900 mb-5 font-bold'>طرق الاشتراك</h2>
-        </div>
+        
+          <h2 className='text-3xl text-center  main-text mb-5 font-bold'>طرق الاشتراك</h2>
+     
 
-        <div className="container  w-[90%] mx-auto">
-          <div className="row grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="container  w-[90%] mx-auto lg:py-8 px-5">
+          <div className="row grid grid-cols-1 md:grid-cols-2 gap-5 lg:py-5">
 
-            <div className="inner text-center py-9 my-5 rounded-xl bg-white shadow-xl hover:translate-y-[-5px] hover:scale-105  hover:shadow-xl hover:shadow-gray-300 transition-all">
-              <i className="fas fa-calendar-day fa-2xl"></i>
-              <h4 dir="auto" className="text-2xl font-bold my-4 text-gray-900">اشتراك شهرى</h4>
+            <div className="inner text-center relative overflow-hidden py-9 my-5 rounded-xl main-color main-text  hover:translate-y-[-5px]   hover:shadow-lg hover:shadow-indigo-400 transition-all outline-1 outline-gray-700">
+              <div className="card-top-line"></div>
+              
+      
+                           <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
+                  <i className="fas fa-calendar-day fa-2xl"></i>
+              </div>
+              <h4 dir="auto" className="text-2xl font-bold my-4 main-text">اشتراك شهرى</h4>
               <div>
                 <span dir="auto" className="text-violet-500 text-3xl font-bold ">ج.م</span>
                 <span className="text-violet-500 text-3xl font-bold">150 </span>
@@ -64,15 +69,19 @@ const Payment: React.FC = () => {
                 </li>
               </ul>
               <div className="custom-translate-up transition">
-                <Link to='/check' className="text-lg font-bold py-3 px-5 border border-blue-800 rounded-lg  outline-1 text-blue-800 hover:bg-blue-800 hover:text-white transition transform hover:outline-0  custom-translate-up">
+                <Link to='/check' className="text-lg font-bold py-3 px-5 border border-violet-900 rounded-lg  outline-1 text-violet-400 hover:bg-violet-900 hover:text-white transition transform hover:outline-0  custom-translate-up">
                   اختر الخطه
                 </Link>
               </div>
             </div>
 
-            <div className="inner hover:scale-105 text-center py-9 my-5 rounded-xl bg-white shadow-xl hover:translate-y-[-5px] transition hover:shadow-xl hover:shadow-gray-300">
-              <i className="fas fa-calendar-day fa-2xl"></i>
-              <h4 dir="auto" className="text-2xl font-bold my-4 text-gray-900">اشتراك فصلى</h4>
+            <div className="inner relative overflow-hidden text-center py-9 my-5 rounded-xl  main-color main-text hover:translate-y-[-5px] transition hover:shadow-lg hover:shadow-indigo-400 outline-1 outline-gray-700">
+               <div className="card-top-line"></div>
+              
+                      <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
+           <i className="fas fa-calendar-day fa-2xl text-white"></i>
+              </div>
+              <h4 dir="auto" className="text-2xl font-bold my-4 ">اشتراك فصلى</h4>
               <div>
                 <span dir="auto" className="text-violet-500 text-3xl font-bold ">ج.م</span>
                 <span className="text-violet-500 text-3xl font-bold">500</span>
@@ -91,16 +100,20 @@ const Payment: React.FC = () => {
                   اختبارات تقييميه
                 </li>
               </ul>
-              <div className="custom-translate-up transition">
-                <Link to='/check' className="text-lg font-bold py-3 px-5 border border-blue-800 rounded-lg  outline-1 text-blue-800 hover:bg-blue-800 hover:text-white transition transform hover:outline-0  custom-translate-up">
+            <div className="custom-translate-up transition">
+                <Link to='/check' className="text-lg font-bold py-3 px-5 border border-violet-900 rounded-lg  outline-1 text-violet-400 hover:bg-violet-900 hover:text-white transition transform hover:outline-0  custom-translate-up">
                   اختر الخطه
                 </Link>
               </div>
             </div>
 
-            <div className="inner overflow-hidden relative year hover:scale-95 text-center py-9 my-5 rounded-xl bg-white shadow-xl hover:translate-y-[-5px] transition hover:shadow-xl hover:shadow-gray-300">
-              <div className='absolute top-[15px] right-[-33px] card text-white rotate-45 py-1 font-bold px-8'>الأكثر شعبية</div>
-              <i className="fas fa-calendar-day fa-2xl"></i>
+            <div className="inner relative overflow-hidden overflow-hidden relative year hover:scale-95 text-center py-9 my-5 rounded-xl bg-white shadow-xl hover:translate-y-[-5px] transition hover:shadow-lg hover:shadow-indigo-400">
+              <div className='absolute top-[15px] right-[-33px] sec-color text-white rotate-45 py-1 font-bold px-8'>الأكثر شعبية</div>
+              
+            
+                       <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center bg-black">
+              <i className="fas fa-calendar-day fa-2xl text-white"></i>
+              </div>
               <h4 dir="auto" className="text-2xl font-bold my-4 text-white">اشتراك سنوى</h4>
               <div>
                 <span dir="auto" className="text-white text-3xl font-bold ">ج.م</span>
@@ -127,11 +140,15 @@ const Payment: React.FC = () => {
               </div>
             </div>
 
-            <div className="inner hover:scale-105 text-center py-9 my-5 rounded-xl bg-white shadow-xl hover:translate-y-[-5px] transition hover:shadow-xl hover:shadow-gray-300">
+            <div className="inner relative overflow-hidden text-center py-9 my-5 rounded-xl main-color main-text  hover:translate-y-[-5px] transition hover:shadow-lg hover:shadow-indigo-400 outline-1 outline-gray-700">
               <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center bg-black">
-                <i className="fas fa-play fa-xl text-white "></i>
+                 <div className="card-top-line"></div>
+                
+                   <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
+            <i className="fas fa-play fa-xl text-white "></i>
               </div>
-              <h4 dir="auto" className="text-2xl font-bold my-4 text-gray-900">محاضره منفصله</h4>
+              </div>
+              <h4 dir="auto" className="text-2xl font-bold my-4 ">محاضره منفصله</h4>
               <div>
                 <span dir="auto" className="text-violet-500 text-3xl font-bold ">ج.م</span>
                 <span className="text-violet-500 text-3xl font-bold">25</span>
@@ -151,7 +168,7 @@ const Payment: React.FC = () => {
                 </li>
               </ul>
               <div className="custom-translate-up transition">
-                <Link to='/check' className="text-lg font-bold py-3 px-5 border border-blue-800 rounded-lg  outline-1 text-blue-800 hover:bg-blue-800 hover:text-white transition transform hover:outline-0  custom-translate-up">
+                <Link to='/check' className="text-lg font-bold py-3 px-5 border border-violet-900 rounded-lg  outline-1 text-violet-400 hover:bg-violet-900 hover:text-white transition transform hover:outline-0  custom-translate-up">
                   اختر الخطه
                 </Link>
               </div>
