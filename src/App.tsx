@@ -12,9 +12,11 @@ import HttpApi from "i18next-http-backend";
 import { useEffect } from "react";
 import Cookies from "js-cookie";
 
-import TeacherGrid from "./pages/TeachersPage/TeacherGrid";
+import TeacherGrid from "./components/Courses/TeacherGrid.tsx";
 import PlansPage from "./pages/PlansPage/PlansPage";
 import { CourseLayout } from "./components/Layout/CourseLayout";
+import CoursesPage from "./pages/CoursesPage";
+import TeachersPage from "./pages/TeachersPage";
 
 i18n
   .use(initReactI18next)
@@ -52,7 +54,9 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-
+          
+          <Route path="/teachers" element={<TeachersPage />} />
+          <Route path="/courses" element={<CoursesPage />} />
           <Route path="/courses/:courseId" element={<CourseLayout />}>
             <Route index element={<TeacherGrid />} />
             <Route path="teachers/:teacherId" element={<PlansPage />} />

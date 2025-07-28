@@ -4,8 +4,8 @@ import { useState } from "react";
 const navLinks = [
   { label: "الرئيسية", href: "/" },
   { label: "الكورسات", href: "/courses" },
+  { label: "المدرسين", href: "/teachers" },
   { label: "الدفع", href: "/payment" },
-  { label: "check", href: "/check" },
 ];
 
 export default function NavBar() {
@@ -68,7 +68,7 @@ export default function NavBar() {
             to={'/'} 
             className="mr-7 px-6 py-2 rounded-full text-white text-sm bg-gradient-to-br from-indigo-400 to-indigo-800"
          >
-            ابدأ الان
+             ابدأ الان رحلتك التعليمية
          </Link>
         </div>
 
@@ -115,7 +115,7 @@ export default function NavBar() {
               onClick={() => setIsMenuOpen(false)}
               className="mt-4 w-1/2 text-center px-5 py-2 rounded-full text-white text-sm font-semibold bg-gradient-to-br from-indigo-500 to-blue-600"
             >
-              ابدأ الان
+              ابدأ الان رحلتك التعليمية
             </Link>
           </div>
         </div>
