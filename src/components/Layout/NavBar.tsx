@@ -4,8 +4,8 @@ import { useState } from "react";
 const navLinks = [
   { label: "الرئيسية", href: "/" },
   { label: "الكورسات", href: "/courses" },
+  { label: "المدرسين", href: "/teachers" },
   { label: "الدفع", href: "/payment" },
-  { label: "check", href: "/check" },
 ];
 
 export default function NavBar() {

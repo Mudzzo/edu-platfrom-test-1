@@ -31,6 +31,32 @@
           "isSub": false,
           "availablePlans": ["plan-monthly", "plan-single-lecture"],
           "subscribedPlanId": null
+        },
+        {
+          "id": "t-chem-3",
+          "name": "أ. محمد إبراهيم",
+          "subject": "كيمياء تحليلية",
+          "courses": 4,
+          "videos": 28,
+          "students": 340,
+          "hours": 60,
+          "avatarUrl": "https://i.pravatar.cc/1250?u=chem-2",
+          "isSub": false,
+          "availablePlans": ["plan-monthly", "plan-single-lecture"],
+          "subscribedPlanId": null
+        },
+        {
+          "id": "t-chem-4",
+          "name": "أ. محمد إبراهيم",
+          "subject": "كيمياء تحليلية",
+          "courses": 4,
+          "videos": 28,
+          "students": 340,
+          "hours": 60,
+          "avatarUrl": "https://i.pravatar.cc/120?u=chem-2",
+          "isSub": false,
+          "availablePlans": ["plan-monthly", "plan-single-lecture"],
+          "subscribedPlanId": null
         }
       ]
     },
