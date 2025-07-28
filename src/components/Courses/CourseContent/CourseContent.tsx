@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import LessonCard from './components/LessonCard';
+import SubscribeModal from '../SubscribeModal';
 
 interface Lesson {
   title: string;
@@ -90,7 +91,7 @@ const CourseContent: React.FC = () => {
 
   return (
     <div className="max-w-5xl mx-auto">
-
+      <SubscribeModal />
       <div className="flex flex-col items-center gap-6 mb-8">
         {planId === 'plan-semester' && (
           <div className="bg-purple-50 rounded-lg p-1">
@@ -180,7 +181,7 @@ const CourseContent: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-b-xl shadow-sm divide-y divide-gray-100">
+            <div>
               {section.lessons.map((lesson, lessonIndex) => (
                 <LessonCard lesson={lesson} lessonIndex={lessonIndex} isIndividualLecturePlan={isIndividualLecturePlan} />
               ))}
