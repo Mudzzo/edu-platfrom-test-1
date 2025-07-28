@@ -1,3 +1,12 @@
+
+.main-color{
+  background-color: #16161b;
+}
+.main-text{
+  color: #ffffff;
+}
+
+
 .card{
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     transition: all 0.3s ease;
@@ -14,6 +23,15 @@ div.benifit{
 .custom-translate-up:hover {
   transform: translateY(-3px);
  
+}
+.card-top-line{
+  position: absolute;
+  top: 0;
+  left: 0;
+height: 4px;
+width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
 }
 .year{
 background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
