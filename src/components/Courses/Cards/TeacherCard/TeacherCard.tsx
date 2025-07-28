@@ -32,7 +32,7 @@ const TeacherCard: React.FC<TeacherCardProps> = ({
   const subscribedPlan = allPlans.find(p => p.id === subscribedPlanId);
 
   return (
-    <div dir="rtl" className="group relative bg-white rounded-2xl w-full max-w-sm mx-auto font-sans overflow-hidden">
+    <div dir="rtl" className="group relative bg-gradient-to-br to-stone-50/10 rounded-2xl w-full max-w-sm mx-auto font-sans overflow-hidden">
       <BackgroundShapes />
       <div className="relative z-10 p-8">
         <TeacherImage name={name} avatarUrl={avatarUrl} isSub={subscribedPlanId !== null} />

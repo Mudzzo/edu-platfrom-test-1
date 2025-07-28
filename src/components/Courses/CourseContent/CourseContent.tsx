@@ -94,13 +94,13 @@ const CourseContent: React.FC = () => {
       <SubscribeModal />
       <div className="flex flex-col items-center gap-6 mb-8">
         {planId === 'plan-semester' && (
-          <div className="bg-purple-50 rounded-lg p-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 bg-gradient-to-br to-stone-50/10 rounded-lg p-1">
             <button
               onClick={() => setActiveSemester('first')}
               className={`px-6 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                 activeSemester === 'first'
-                  ? 'bg-white text-purple-700 shadow-sm'
-                  : 'text-gray-600 hover:text-purple-700'
+                  ? 'bg-white/20 text-indigo-400 shadow-sm'
+                  : 'text-stone-300 hover:text-indigo-400'
               }`}
             >
               الفصل الدراسي الأول
@@ -109,8 +109,8 @@ const CourseContent: React.FC = () => {
               onClick={() => setActiveSemester('second')}
               className={`px-6 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                 activeSemester === 'second'
-                  ? 'bg-white text-purple-700 shadow-sm'
-                  : 'text-gray-600 hover:text-purple-700'
+                  ? 'bg-white/20 text-indigo-400 shadow-sm'
+                  : 'text-stone-300 hover:text-indigo-400'
               }`}
             >
               الفصل الدراسي الثاني
@@ -119,32 +119,32 @@ const CourseContent: React.FC = () => {
         )}
 
         {planId === 'plan-monthly' && (
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {monthsData.map((month) => (
               <button
                 key={month.name}
                 onClick={() => month.isSubscribed && setActiveMonth(month.name)}
-                className={`relative p-4 rounded-lg border-2 transition-all duration-200 ${
+                className={`relative py-4 px-8 rounded-lg transition-all duration-200 cursor-pointer bg-gradient-to-br to-stone-50/10 ${
                   !month.isSubscribed
-                    ? 'border-gray-200 bg-gray-50 cursor-not-allowed'
+                    ? 'cursor-not-allowed'
                     : activeMonth === month.name
-                    ? 'border-purple-600 bg-purple-50'
-                    : 'border-gray-200 bg-white hover:border-purple-300'
+                    ? 'border border-purple-600'
+                    : 'hover:border hover:border-purple-300'
                 }`}
               >
                 <div className="flex flex-col items-center gap-2">
                   <span className={`text-lg font-medium ${
                     !month.isSubscribed
-                      ? 'text-gray-400'
+                      ? 'text-stone-600'
                       : activeMonth === month.name
                       ? 'text-purple-700'
-                      : 'text-gray-700'
+                      : 'text-stone-300'
                   }`}>
                     {month.arabicName}
                   </span>
                   {!month.isSubscribed && (
-                    <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px] rounded-lg flex items-center justify-center">
-                      <div className="flex items-center gap-2 text-gray-500">
+                    <div className="absolute inset-0 bg-white/20 backdrop-blur-[1px] rounded-lg flex items-center justify-center">
+                      <div className="flex items-center gap-2 text-stone-300">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                         </svg>
@@ -183,7 +183,7 @@ const CourseContent: React.FC = () => {
 
             <div>
               {section.lessons.map((lesson, lessonIndex) => (
-                <LessonCard lesson={lesson} lessonIndex={lessonIndex} isIndividualLecturePlan={isIndividualLecturePlan} />
+                <LessonCard key={lessonIndex} lesson={lesson} lessonIndex={lessonIndex} isIndividualLecturePlan={isIndividualLecturePlan} />
               ))}
             </div>
           </motion.div>
