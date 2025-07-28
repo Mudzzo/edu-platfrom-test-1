@@ -8,7 +8,9 @@ export default function Home() {
       {/* Home Page
       <h1 className=" text-center ">{t("hi")}</h1> */}
       <Hero />
-      <CourseGrid />
+      <section className="container mx-auto px-3 md:px-0">
+        <CourseGrid haveTitle={true} />
+      </section>
     </div>
   );
 }
