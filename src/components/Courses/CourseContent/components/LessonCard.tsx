@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface Lesson {
+export interface Lesson {
   title: string;
   duration: string;
   isFree: boolean;
@@ -42,7 +42,7 @@ const LessonCard: React.FC<LessonCardProps> = ({ lesson, lessonIndex, isIndividu
       <div className="sm:w-48 w-full h-48 sm:h-auto flex-shrink-0">
         <img 
           className="w-full h-full object-cover" 
-          src={lesson.imageUrl || `https://placehold.co/600x400/8B5CF6/FFFFFF?text=Lesson`} 
+          src={`https://placehold.co/600x400/8B5CF6/FFFFFF?text=Lesson`} 
           alt={lesson.title} 
         />
       </div>
@@ -74,7 +74,7 @@ const LessonCard: React.FC<LessonCardProps> = ({ lesson, lessonIndex, isIndividu
                   </span>
                 ) : (
                   <div className="flex items-center gap-2">
-                    <span className="text-gray-700 font-semibold">{lesson.price} ج.م</span>
+                    <span className="text-stone-300 font-semibold">{lesson.price} ج.م</span>
                     <button className="bg-purple-600 hover:bg-purple-700 text-white text-xs font-bold px-4 py-2 rounded-full transition-colors duration-300">
                       شراء المحاضرة
                     </button>
