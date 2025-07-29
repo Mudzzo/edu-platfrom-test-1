@@ -34,7 +34,8 @@ const Check: React.FC = () => {
             اختر الباقة المناسبة لك وأكمل عملية الدفع
           </p>
         </div>
-<div className='lg:flex  w-[100%]  lg:my-5'>
+<div className='lg:flex  w-[100%]  lg:my-5 '>
+
     <div className='lg:w-[80%] '>
       
 
@@ -45,7 +46,7 @@ const Check: React.FC = () => {
             <i className="fas fa-tag text-white fa-2xl"></i>
           </div>
 
-          <div className="row px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 shadow-2xl  ">
+          <div className="row px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-5 shadow-2xl  ">
      <div
   onClick={() => setSelectedPlanId('monthly')}
   className={`inner overflow-hidden outline-1 outline-gray-700 relative text-center py-10 rounded-xl custom-translate-up transition-all main-color hover:shadow-lg hover:shadow-indigo-500 cursor-pointer ${
@@ -185,7 +186,7 @@ const Check: React.FC = () => {
             <span className="text-white text-xl">وسيلة الدفع</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3  lg:gap-5 px-4 pb-6 bg-black">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 px-4 pb-6 bg-black">
             {options.map((option) => (
               <div
                 key={option.id}
@@ -219,7 +220,7 @@ const Check: React.FC = () => {
   </div>
 
 
-        <div className="relative overflow-hidden lg:w-[30%] lg:mt-5 lg:ml-5 bg-black text-white  w-[90%]   rounded-xl  mx-auto hover:shadow-xl  transition-all outline  outline-gray-200 mb-5 ">
+        <div className="relative overflow-hidden lg:w-[30%] lg:mt-5 lg:ml-15 bg-black text-white  w-[90%]   rounded-xl  mx-auto hover:shadow-xl  transition-all outline  outline-gray-200 mb-5 lg:mb-10 ">
           <div className='card-top-line'></div>
           <div dir="auto" className=" text-right py-5 pr-5">
             <i className="fas fa-receipt text-2xl "></i>
