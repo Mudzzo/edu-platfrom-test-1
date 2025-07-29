@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import  Check from "./pages/check/Check";
 import  Payment from "./pages/payment/Payment";
+
 import Layout from "./components/Layout/Layout";
 import CourseContent from "./components/Courses/CourseContent/CourseContent";
 import i18n from "i18next";
@@ -65,6 +66,7 @@ function App() {
           
           <Route path="/payment" element={<Payment />} />
           <Route path="/check" element={<Check />} />
+         
 
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
