@@ -38,7 +38,7 @@ export default function NavBar() {
 
       <div className="relative z-10 container mx-auto px-12 flex items-center justify-between p-4 text-white">
         <div className="flex flex-col gap-1.5">
-          <Link to="/" className="text-4xl font-bold text-indigo-500">
+          <Link to="/" className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-500 ">
             المعلم
           </Link>
           <span className="text-sm">المنصة الذكية للتعليم</span>
