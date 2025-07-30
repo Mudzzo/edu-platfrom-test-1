@@ -4,6 +4,7 @@ import { AuthProvider } from "./context/AuthContext.tsx";
 import Home from "./pages/Home/Home";
 import  Check from "./pages/check/Check";
 import  Payment from "./pages/payment/Payment";
+
 import Layout from "./components/Layout/Layout";
 import CourseContent from "./components/Courses/CourseContent/CourseContent";
 import i18n from "i18next";
