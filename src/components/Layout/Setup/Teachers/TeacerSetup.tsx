@@ -1,6 +1,20 @@
 import "./TeacherSetup.css"
+import TeacherList from "./TeacherList";
 
 export default function TeacherSetup() {
+    type Teacher = {
+        name: string;
+        specialization: string;
+        experience: number;
+    }
+
+    var teachers: Teacher[] = [
+        { name: "أحمد محمد", specialization: "الفيزياء", experience: 12 },
+        { name: "سارة علي", specialization: "الرياضيات", experience: 21 },
+        { name: "محمد حسن", specialization: "الكيمياء", experience: 12 },
+        { name: "ليلى يوسف", specialization: "الأحياء", experience: 4 }
+    ];
+
     return (
         <div className='teachers-tab grid grid-cols-3 gap-6'>
             <form className='teachers-form flex justify-center items-center flex-col gap-1 col-span-2'>
@@ -46,11 +60,16 @@ export default function TeacherSetup() {
                     <span>إضافة المدرس</span>
                 </button>
             </form>
-            <div className='teachers-list bg-white/5 h-1/2  w-80 rounded-2xl border border-gray-700 p-10'>
-                <h3 className="font-bold text-l">المدرسين المضافون</h3>
-                <div>
-
-                </div>
+            <div className='teachers-list bg-white/5 h-fit w-90 rounded-2xl border border-gray-700 p-9'>
+            <h3 className="font-bold text-l">المدرسين المضافون</h3>
+            {teachers.map((teacher, index) => (
+                <TeacherList 
+                    key={index} 
+                    name={teacher.name} 
+                    specialization={teacher.specialization} 
+                    experience={teacher.experience} 
+                />
+            ))}
             </div>
         </div>
     )
