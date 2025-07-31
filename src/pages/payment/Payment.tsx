@@ -19,7 +19,7 @@ const Payment: React.FC = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <div className='text-center mb-6'>
-          <div className="card  w-[90%] mx-auto rounded-xl mt-8 ">
+          <div className="my-color transition-all duration-300 ease-in-out  w-[90%] mx-auto rounded-xl mt-8 ">
             <div className="card-body py-5">
               <h3 className="card-title text-white text-2xl mb-4">عرض خاص للمشتركين الجدد
                 <span><i className='fas fa-gift'></i></span>
@@ -46,7 +46,7 @@ const Payment: React.FC = () => {
               <div className="card-top-line"></div>
               
       
-                           <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
+                           <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center lovely-color">
                   <i className="fas fa-calendar-day fa-2xl"></i>
               </div>
               <h4 dir="auto" className="text-2xl font-bold my-4 main-text">اشتراك شهرى</h4>
@@ -78,7 +78,7 @@ const Payment: React.FC = () => {
             <div className="inner relative overflow-hidden text-center py-9 my-5 rounded-xl  main-color main-text hover:translate-y-[-5px] transition hover:shadow-lg hover:shadow-indigo-400 outline-1 outline-gray-700">
                <div className="card-top-line"></div>
               
-                      <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
+                      <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center lovely-color">
            <i className="fas fa-calendar-day fa-2xl text-white"></i>
               </div>
               <h4 dir="auto" className="text-2xl font-bold my-4 ">اشتراك فصلى</h4>
@@ -107,29 +107,30 @@ const Payment: React.FC = () => {
               </div>
             </div>
 
-            <div className="inner relative overflow-hidden overflow-hidden relative year hover:scale-95 text-center py-9 my-5 rounded-xl bg-white shadow-xl hover:translate-y-[-5px] transition hover:shadow-lg hover:shadow-indigo-400">
-              <div className='absolute top-[15px] right-[-33px] sec-color text-white rotate-45 py-1 font-bold px-8'>الأكثر شعبية</div>
+            <div className="inner relative overflow-hidden bg-black overflow-hidden relative   text-center py-9 my-5 rounded-xl  outline-1 outline-gray-700 hover:translate-y-[-5px] transition hover:shadow-xl hover:shadow-indigo-200">
+              <div className="card-top-line "></div>
+              <div className='absolute top-[20px] right-[-34px] lovely-color text-white rotate-45 py-1 font-bold px-8'>الأكثر شعبية</div>
               
             
-                       <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center bg-black">
+                       <div className="lovely-color w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center ">
               <i className="fas fa-calendar-day fa-2xl text-white"></i>
               </div>
               <h4 dir="auto" className="text-2xl font-bold my-4 text-white">اشتراك سنوى</h4>
               <div>
-                <span dir="auto" className="text-white text-3xl font-bold ">ج.م</span>
-                <span className="text-white text-3xl font-bold">900</span>
+                <span dir="auto" className="text-indigo-500 text-3xl font-bold ">ج.م</span>
+                <span className="text-indigo-500 text-3xl font-bold">900</span>
               </div>
               <ul dir="auto">
                 <li className='my-4 text-xl text-white'>
-                  <i className="fas fa-check ml-1"></i>
+                  <i className="fas fa-check ml-1 text-green-500"></i>
                   جميع المواد
                 </li>
                 <li className='my-4 text-xl text-white'>
-                  <i className="fas fa-check ml-1"></i>
+                  <i className="fas fa-check ml-1 text-green-500"></i>
                   دعم فنى vip
                 </li>
                 <li className='my-4 text-xl text-white'>
-                  <i className="fas fa-check ml-1 mb-5"></i>
+                  <i className="fas fa-check ml-1 mb-5 text-green-500"></i>
                   شهادات انجاز
                 </li>
               </ul>
@@ -144,7 +145,7 @@ const Payment: React.FC = () => {
               <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center bg-black">
                  <div className="card-top-line"></div>
                 
-                   <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
+                   <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center lovely-color">
             <i className="fas fa-play fa-xl text-white "></i>
               </div>
               </div>
@@ -180,4 +181,4 @@ const Payment: React.FC = () => {
     </>
   )
 }
-export default Payment;
+export default Payment;

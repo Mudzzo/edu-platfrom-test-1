@@ -68,12 +68,12 @@ const Check: React.FC = () => {
   <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
     <i className="fas fa-calendar-day fa-2xl main-text"></i>
   </div>
-  <h5 className="text-xl font-semibold my-4 main-text">اشتراك شهري</h5>
+  <h5 className="text-lg font-semibold my-4 main-text">اشتراك شهري</h5>
   <div dir="auto" className="py-5">
     <span className="text-indigo-600 text-3xl font-bold">150</span>
     <span className="text-3xl text-indigo-600 font-bold">ج.م</span>
   </div>
-  <p className="text-gray-500 text-xl">شهر واحد</p>
+  <p className="text-gray-400 text-lg">شهر واحد</p>
 </div>
 <div
   onClick={() => setSelectedPlanId('semester')}
@@ -96,20 +96,20 @@ const Check: React.FC = () => {
   <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
     <i className="fas fa-calendar-alt fa-2xl main-text"></i>
   </div>
-  <h5 className="text-xl font-semibold my-4 main-text">اشتراك فصلى</h5>
+  <h5 className="text-lg font-semibold my-4 main-text">اشتراك فصلى</h5>
   <div dir="auto" className="py-5">
     <span className="text-indigo-600 text-3xl font-bold">500</span>
     <span className="text-3xl text-indigo-600 font-bold">ج.م</span>
   </div>
-  <p className="text-gray-500 text-xl">فصل دراسي كامل</p>
+  <p className="text-gray-400 text-lg">فصل دراسي كامل</p>
 </div>
 <div
   onClick={() => setSelectedPlanId('yearly')}
-  className={`inner year relative overflow-hidden shadow-gray-400 hover:scale-95 text-center pt-10 rounded-xl bg-white hover:translate-y-[-5px] transition hover:shadow-3xl hover:shadow-gray-300 cursor-pointer ${
+  className={`inner bg-black relative overflow-hidden hover:  text-center pt-10 rounded-xl outline-1 outline-gray-700 hover:translate-y-[-5px] transition hover:shadow-xl hover:shadow-indigo-300 cursor-pointer ${
     selectedPlanId === 'yearly' ? 'ring-2 ring-indigo-500' : ''
   }`}
 >
-  <div className="absolute top-[12px] right-[-38px] card text-white rotate-45 py-1 font-bold px-8">
+  <div className="absolute top-[16px] right-[-38px] year text-white rotate-45 py-1 font-bold px-8">
     الأكثر شعبية
   </div>
   <label>
@@ -121,17 +121,18 @@ const Check: React.FC = () => {
       onChange={() => setSelectedPlanId('yearly')}
        className="absolute top-3 left-1"
     />
+    <div className="card-top-line"></div>
   </label>
 
-  <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center main-color">
+  <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
     <i className="fas fa-calendar fa-2xl text-white"></i>
   </div>
-  <h4 dir="auto" className="text-xl font-bold my-4 text-white">اشتراك سنوى</h4>
-  <div className="pt-10">
+  <h4 dir="auto" className="text-lg font-bold my-4 text-white">اشتراك سنوى</h4>
+  <div className="pt-5">
     <span dir="auto" className="text-white text-3xl font-bold">ج.م</span>
-    <span className="text-white text-3xl font-bold">900</span>
+    <span className="text-white  text-3xl font-bold">900</span>
   </div>
-  <p className="text-gray-300 mb-3 pt-10 text-xl">عام كامل</p>
+  <p className="text-gray-400 text-lg pt-5">عام كامل</p>
 </div>
 <div
   onClick={() => setSelectedPlanId('single')}
@@ -154,12 +155,12 @@ const Check: React.FC = () => {
   <div className="w-[50px] h-[50px] mx-auto rounded-full flex items-center justify-center year">
     <i className="fas fa-play fa-xl text-white"></i>
   </div>
-  <h5 className="text-2xl font-bold my-4 main-text">محاضرة منفصلة</h5>
+  <h4 dir="auto" className="text-lg font-bold my-4 text-white">محاضرة منفصلة</h4>
   <div dir="auto" className="py-5">
     <span className="text-indigo-600 text-3xl font-bold">25</span>
     <span className="text-3xl text-indigo-600 font-bold">ج.م</span>
   </div>
-  <p className="text-gray-500 text-xl">محاضرة واحدة</p>
+  <p className="text-gray-300 text-lg">محاضرة واحدة</p>
 </div>
             
           </div>
@@ -220,7 +221,7 @@ const Check: React.FC = () => {
   </div>
 
 
-        <div className="relative overflow-hidden lg:w-[30%] my-10 md:mb-0   md:ml-10 lg:ml-15 lg:mt-[5px] bg-black text-white  w-[90%]   rounded-xl  mx-auto hover:shadow-xl  transition-all outline  outline-gray-200    ">
+        <div className="relative overflow-hidden lg:w-[30%] my-10 md:mb-0  lg:ml-10 mx-auto lg:mt-[5px] bg-black text-white  w-[90%]   rounded-xl  mx-auto hover:shadow-xl  transition-all outline  outline-gray-200    ">
           <div className='card-top-line'></div>
           <div dir="auto" className=" text-right py-5 pr-5">
             <i className="fas fa-receipt text-2xl "></i>
@@ -252,12 +253,12 @@ const Check: React.FC = () => {
               <i className="fas fa-gift text-green-950 font-bold text-xl px-5"></i>
               <span className="text-green-950 font-bold text-xl">وفرت 270 ج.م!</span>
             </div>
-            <button dir="auto" className="cursor-pointer partBg transition-all custom-translate-up rounded-xl py-3 w-full mb-5 mx-auto block">
+            <button dir="auto" className="cursor-pointer year transition-all custom-translate-up rounded-xl py-3 w-full mb-5 mx-auto block">
               <i className="fas fa-lock text-white text-xl font-bold"></i>
               <span className="font-bold text-xl text-white">تأكيد الدفع</span>
             </button>
-            <p dir="auto" className="mb-5 text-gray-500 text-center">
-              <i className="fas fa-shield-alt text-gray-500"></i>
+            <p dir="auto" className="mb-5 text-gray-100 text-center">
+              <i className="fas fa-shield-alt text-gray-300"></i>
               دفع آمن ومشفر
             </p>
           </div>
